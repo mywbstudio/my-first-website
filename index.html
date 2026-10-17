@@ -1,10 +1,165 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Meri Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyWeb Studio | Websites Made Simple</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #172033;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #edf0f5;
+    }
+    .logo { font-size: 22px; font-weight: bold; }
+    .logo span { color: #2563eb; }
+    nav a {
+      text-decoration: none;
+      color: #374151;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    .hero {
+      text-align: center;
+      padding: 95px 20px 85px;
+      background: linear-gradient(180deg, #eff6ff, #ffffff);
+    }
+    .tag {
+      color: #2563eb;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.12;
+      margin: 20px auto;
+      max-width: 750px;
+      letter-spacing: -2px;
+    }
+    h1 span { color: #2563eb; }
+    .hero p {
+      color: #64748b;
+      max-width: 560px;
+      margin: 0 auto 28px;
+    }
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 13px 23px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 65px 8%; }
+    .section-title { text-align: center; margin-bottom: 32px; }
+    .section-title h2 { font-size: 32px; }
+    .section-title p { color: #64748b; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #e5eaf2;
+      padding: 25px;
+      border-radius: 14px;
+      background: white;
+    }
+    .card h3 { margin: 12px 0 8px; }
+    .card p { color: #64748b; font-size: 14px; }
+    .symbol { font-size: 28px; }
+    .about {
+      text-align: center;
+      background: #f8fafc;
+    }
+    .about p {
+      max-width: 620px;
+      margin: 12px auto;
+      color: #64748b;
+    }
+    .contact { text-align: center; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+      border-top: 1px solid #edf0f5;
+      font-size: 13px;
+    }
+    @media (max-width: 520px) {
+      header { padding: 18px 5%; }
+      nav a { margin-left: 9px; font-size: 12px; }
+      section { padding: 50px 6%; }
+      h1 { letter-spacing: -1px; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello Bhai!</h1>
-    <p>Ye meri pehli website hai.</p>
+  <header>
+    <div class="logo">MyWeb <span>Studio.</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="tag">CREATIVE WEB DESIGN STUDIO</div>
+      <h1>Ideas into <span>beautiful</span> websites.</h1>
+      <p>We create clean, modern and mobile-friendly website experiences for businesses and creators.</p>
+      <a class="btn" href="#services">Explore Services →</a>
+    </div>
+
+    <section id="services">
+      <div class="section-title">
+        <h2>What We Do</h2>
+        <p>Simple solutions for your online presence.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="symbol">🌐</div>
+          <h3>Website Design</h3>
+          <p>Clean and attractive websites that work on phones and computers.</p>
+        </div>
+        <div class="card">
+          <div class="symbol">📱</div>
+          <h3>Responsive Layouts</h3>
+          <p>Layouts that adapt smoothly to different screen sizes.</p>
+        </div>
+        <div class="card">
+          <div class="symbol">✨</div>
+          <h3>Landing Pages</h3>
+          <p>Simple pages to showcase a brand, service or personal project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-title">
+        <h2>About MyWeb Studio</h2>
+      </div>
+      <p>We believe every idea deserves a place online. Our goal is to make web design simple, useful and accessible.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <h2>Have an idea?</h2>
+        <p>Let's turn it into a website.</p>
+      </div>
+      <a class="btn" href="https://github.com/mywbstudio">Visit Our GitHub</a>
+    </section>
+  </main>
+
+  <footer>© 2026 MyWeb Studio. Built with care.</footer>
 </body>
 </html>
